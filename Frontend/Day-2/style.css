@@ -1,0 +1,8 @@
+body {
+  color: black;
+  opacity: 0.8;
+  background-size: cover;
+  font-size: 24px;
+  background-image: url("./img.jpg");
+  font-weight: 500;
+}
