@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Devsnest Frontend : Day - 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock">
+        <div class="clockbody">
+          <span class="twelve">12</span>
+          <span class="six">6</span>
+          <span class="three">3</span>
+          <span class="nine">9</span>
+          <span class="one">1</span>
+          <span class="two">2</span>
+          <span class="four">4</span>
+          <span class="five">5</span>
+          <span class="seven">7</span>
+          <span class="eight">8</span>
+          <span class="ten">10</span>
+          <span class="eleven">11</span>
+          <span class="dot"></span>
+          <span class="hour"></span>
+          <span class="minute"></span>
+          <span class="second"></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const deg = 6;
+      const hour = document.getElementsByClassName("hour")[0];
+      const minute = document.getElementsByClassName("minute")[0];
+      const second1 = document.getElementsByClassName("second")[0];
+
+      setInterval(() => {
+        let day = new Date();
+        let hh = day.getHours();
+        let mm = day.getMinutes();
+        let ss = day.getSeconds();
+        if (hh > 12) hh -= 12;
+        if (hh == 0) hh = 12;
+
+        hour.style.transform = `rotate(${hh * 30 + mm / 2}deg)`;
+
+        minute.style.transform = `rotate(${mm * 6}deg)`;
+        second1.style.transform = `rotate(${ss * 6}deg)`;
+      }, 1000);
+    </script>
+  </body>
+</html>
