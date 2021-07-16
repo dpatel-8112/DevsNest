@@ -1,0 +1,82 @@
+[
+  {
+    "question": "ALU stands for",
+    "a": "Arithmetic Logic Unit",
+    "b": "Application Logic Unit",
+    "c": "Array Logic Unit",
+    "d": "None of These",
+    "answer": "a"
+  },
+  {
+    "question": "The Brain of Computer System is",
+    "a": "ALU",
+    "b": "CPU",
+    "c": "Memory",
+    "d": "None of These",
+    "answer": "b"
+  },
+  {
+    "question": "What difference does the 5th generation computer have from other generation computers?",
+    "a": "Technological Advancement",
+    "b": "Object Oriented Programming",
+    "c": "Scientific Code",
+    "d": "All of the above",
+    "answer": "d"
+  },
+  {
+    "question": "Which of the following computer generation uses concept of artificial intelligence?",
+    "a": "First Generation",
+    "b": "Second Generation",
+    "c": "Third Generation",
+    "d": "Fourth Generation",
+    "answer": "d"
+  },
+  {
+    "question": "When a key is pressed on keyboard, which standard is used for converting the keystroke into the corresponding bits?",
+    "a": "ANSI",
+    "b": "ASCII",
+    "c": "EBCDIC",
+    "d": "ISO",
+    "answer": "b"
+  },
+  {
+    "question": "Which device is used as the standard pointing device in a Graphical User Environment?",
+    "a": "Keyboard",
+    "b": "Mouse",
+    "c": "Joystick",
+    "d": "Trackball",
+    "answer": "b"
+  },
+  {
+    "question": "Which of the following is a valid storage type?",
+    "a": "CPU",
+    "b": "Keyboard",
+    "c": "Pen Drive",
+    "d": "Track Ball",
+    "answer": "c"
+  },
+  {
+    "question": "The section of the CPU that is responsible for performing mathematical operations",
+    "a": "Memory",
+    "b": "Register Unit",
+    "c": "Control Unit",
+    "d": "ALU",
+    "answer": "d"
+  },
+  {
+    "question": "Any storage device added to computer beyond the immediately usable main storage is known as:",
+    "a": "Floppy Disk",
+    "b": "Hard Disk",
+    "c": "Backing store",
+    "d": "Punched Card",
+    "answer": "a"
+  },
+  {
+    "question": "The list of coded instuctions is called",
+    "a": "Computer Program",
+    "b": "Algorithm",
+    "c": "Flowchart",
+    "d": "Utility Program",
+    "answer": "a"
+  }
+]
