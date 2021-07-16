@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div>
+          <div>Moves Remaining : <span id="remain">10</span></div>
+          <div>Scores : <span id="score">0</span></div>
+        </div>
+        <div class="boxes">
+          <div class="box" id="1" data-icon="😀"></div>
+          <div class="box" id="2" data-icon="😎"></div>
+          <div class="box" id="3" data-icon="😎"></div>
+          <div class="box" id="4" data-icon="😂"></div>
+          <div class="box" id="5" data-icon="🤑"></div>
+          <div class="box" id="6" data-icon="😴"></div>
+          <div class="box" id="7" data-icon="🤬"></div>
+          <div class="box" id="8" data-icon="🙄"></div>
+          <div class="box" id="9" data-icon="🤬"></div>
+          <div class="box" id="10" data-icon="😴"></div>
+          <div class="box" id="11" data-icon="😀"></div>
+          <div class="box" id="12" data-icon="💩"></div>
+          <div class="box" id="13" data-icon="🤑"></div>
+          <div class="box" id="14" data-icon="😂"></div>
+          <div class="box" id="15" data-icon="💩"></div>
+          <div class="box" id="16" data-icon="🙄"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var score = 0;
+      var remain = 10;
+
+      var count = 0;
+      var id = 0;
+      var id2 = 0;
+      var icon = "";
+      var icon2 = "";
+
+      function fun1(box, e) {
+        console.log(e);
+        if (count == 0) {
+          id = event.target.id;
+          icon = e.target.dataset.icon;
+          box.style.transform = "rotateY(180deg)";
+          box.style.transition = "all 2s";
+          setTimeout(() => (box.innerHTML = e.target.dataset.icon), 600);
+          count++;
+        } else if (count == 1) {
+          id2 = event.target.id;
+          icon2 = e.target.dataset.icon;
+          box.style.transform = "rotateY(180deg)";
+          box.style.transition = "all 2s";
+          setTimeout(() => (box.innerHTML = e.target.dataset.icon), 600);
+          setTimeout(() => {
+            if (icon == icon2) {
+              score++;
+              remain--;
+              document.getElementById("score").innerHTML = score;
+
+              if (remain < 0) {
+                alert("You Lose");
+                window.location.reload();
+              }
+              if (count == 8) {
+                alert("You Won");
+                window.location.reload();
+              }
+
+              // document.getElementById(id).setAttribute("id", "0");
+              // document.getElementById(id2).setAttribute("id", "0");
+            } else {
+              let first = document.getElementById(id);
+
+              first.style.transform = "rotateY(360deg)";
+              first.style.transition = "all 2s";
+              setTimeout(() => (first.innerHTML = ""), 600);
+
+              box.style.transform = "rotateY(360deg)";
+              box.style.transition = "all 2s";
+              setTimeout(() => (box.innerHTML = ""), 600);
+            }
+            console.log(id + " " + id2);
+            count = 0;
+            id = 0;
+            id2 = 0;
+            first = 0;
+          }, 2000);
+        }
+      }
+
+      const boxes = document.querySelectorAll(".box");
+      boxes.forEach((box) => {
+        box.addEventListener("click", (event) => {
+          console.log("Clicked");
+          fun1(box, event);
+        });
+      });
+    </script>
+  </body>
+</html>

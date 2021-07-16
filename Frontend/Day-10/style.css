@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxes {
+  display: flex;
+  width: 504px;
+  flex-wrap: wrap;
+}
+.box {
+  background-color: rebeccapurple;
+  height: 60px;
+  width: 120px;
+  margin: 3px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px black;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
