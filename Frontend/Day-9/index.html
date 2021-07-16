@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Devsnest Frontend Day-9</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="screen">SCREEN</div>
+        <div class="remaining">
+          <div>Booked Seat : <span id="booked"> 0 </span></div>
+          <div>Remaining Seat : <span id="remaining"> 50 </span></div>
+        </div>
+        <div class="seats">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const boxes = document.querySelectorAll(".seat");
+      const booked = document.getElementById("booked");
+      const remaining = document.getElementById("remaining");
+
+      boxes.forEach((box) => {
+        box.addEventListener("click", (event) => {
+          if (box.classList.length == 1) {
+            box.classList.add("active");
+            booked.innerText = parseInt(booked.innerHTML) + 1;
+            remaining.innerText = parseInt(remaining.innerHTML) - 1;
+            console.log(booked.innerHTML);
+          } else {
+            booked.innerText = parseInt(booked.innerHTML) - 1;
+            remaining.innerText = parseInt(remaining.innerHTML) + 1;
+            box.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
