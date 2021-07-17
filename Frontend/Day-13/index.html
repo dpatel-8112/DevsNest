@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Devsnest Frontend - Day:13</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Information</h1>
+      <form onsubmit="submitPlace(event)">
+        <div class="inputContainer">
+          <input id="placeInput" type="text" />
+        </div>
+        <div class="buttonContainer">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <div class="resultContainer">
+        <div class="placename">Place : <span id="place"></span></div>
+        <div class="temparature">Temparature : <span id="temp"></span></div>
+        <div class="feelslike">Feels Like : <span id="feelslike"></span></div>
+        <div class="humidity">humidity : <span id="humidity"></span></div>
+        <div class="cloud"><span id="status"></span></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
