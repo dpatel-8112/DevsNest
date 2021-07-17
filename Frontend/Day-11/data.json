@@ -1,5 +1,6 @@
 [
   {
+    "id": "0",
     "question": "ALU stands for",
     "a": "Arithmetic Logic Unit",
     "b": "Application Logic Unit",
@@ -8,6 +9,7 @@
     "answer": "a"
   },
   {
+    "id": "1",
     "question": "The Brain of Computer System is",
     "a": "ALU",
     "b": "CPU",
@@ -16,6 +18,7 @@
     "answer": "b"
   },
   {
+    "id": "2",
     "question": "What difference does the 5th generation computer have from other generation computers?",
     "a": "Technological Advancement",
     "b": "Object Oriented Programming",
@@ -24,6 +27,7 @@
     "answer": "d"
   },
   {
+    "id": "3",
     "question": "Which of the following computer generation uses concept of artificial intelligence?",
     "a": "First Generation",
     "b": "Second Generation",
@@ -32,6 +36,7 @@
     "answer": "d"
   },
   {
+    "id": "4",
     "question": "When a key is pressed on keyboard, which standard is used for converting the keystroke into the corresponding bits?",
     "a": "ANSI",
     "b": "ASCII",
@@ -40,6 +45,7 @@
     "answer": "b"
   },
   {
+    "id": "5",
     "question": "Which device is used as the standard pointing device in a Graphical User Environment?",
     "a": "Keyboard",
     "b": "Mouse",
@@ -48,6 +54,7 @@
     "answer": "b"
   },
   {
+    "id": "6",
     "question": "Which of the following is a valid storage type?",
     "a": "CPU",
     "b": "Keyboard",
@@ -56,6 +63,7 @@
     "answer": "c"
   },
   {
+    "id": "7",
     "question": "The section of the CPU that is responsible for performing mathematical operations",
     "a": "Memory",
     "b": "Register Unit",
@@ -64,6 +72,7 @@
     "answer": "d"
   },
   {
+    "id": "8",
     "question": "Any storage device added to computer beyond the immediately usable main storage is known as:",
     "a": "Floppy Disk",
     "b": "Hard Disk",
@@ -72,6 +81,7 @@
     "answer": "a"
   },
   {
+    "id": "9",
     "question": "The list of coded instuctions is called",
     "a": "Computer Program",
     "b": "Algorithm",

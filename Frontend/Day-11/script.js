@@ -1,8 +1,10 @@
 let mainContainer = document.querySelector(".main-container");
 let numCorrect = 0;
 
-fetch("data.json")
+fetch("./data.json")
   .then((response) => {
+    console.log(response);
+
     return response.json();
   })
   .then((json) => {
@@ -32,7 +34,7 @@ fetch("data.json")
       options.append(option3);
       options.append(option4);
 
-      question.innerHTML = json[i].question;
+      question.innerHTML = "Q-" + json[i].id + ". " + json[i].question;
       option1.innerHTML = json[i].a;
       option2.innerHTML = json[i].b;
       option3.innerHTML = json[i].c;
