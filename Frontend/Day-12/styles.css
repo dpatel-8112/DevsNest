@@ -1,0 +1,25 @@
+body{
+  background-color: rgba(0,0,0);
+  color: white;
+  
+}
+.container{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.done {
+    text-decoration: line-through; 
+    color: white;
+    cursor: pointer;
+    background-color: black;
+  }
+  #task,#add{
+    font-size: 20px;
+  }
+ li{
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 25px;
+ }
