@@ -1,6 +1,6 @@
 import React from "react";
 import Item from "./Item";
-import FoodItems from "./Items.json";
+import FoodItems from "./FoodItems.json";
 import style from "./Items.module.css";
 
 function Items() {
