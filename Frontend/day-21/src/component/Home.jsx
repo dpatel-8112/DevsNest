@@ -9,8 +9,6 @@ function Home() {
     setCalArray([...calArray, newState]);
   };
 
-  const deleteHandler = (newState) => {};
-
   return (
     <div style={{ margin: "20px 0px" }}>
       <Items setCalArrayHandler={setCalArrayHandler} />
