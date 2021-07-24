@@ -1,12 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Board from "./component/Board";
+import Home from "./component/Home";
+import { useState } from "react";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Board />
+        <Home />
       </header>
     </div>
   );
