@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.Container {
+  display: flex;
+  margin-top: 10px;
+}
+.NavbarWrapper {
+  display: flex;
+  text-decoration: none;
+}
+.NavbarWrapper a {
+  text-decoration: none;
+}
+.NavbarItem {
+  display: flex;
+  padding: 5px 20px;
+  font-size: 26px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+.NavbarItem:hover {
+  background-color: rgba(0, 0, 0, 0.384);
+}
+.PageContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px 0px 0px;
+}
