@@ -1,7 +1,7 @@
 import { ADD_TODO } from "./add/AddType";
+import { DELETE_TODO } from "./delete/DeleteType";
 
 const initialState = {
-  id: 0,
   todo: [],
 };
 
@@ -10,10 +10,13 @@ const rootReducer = (state = initialState, action) => {
     case ADD_TODO:
       return {
         ...state,
-        todo: [...state.todo, { id: state.id, item: action.payload }],
-        id: state.id + 1,
+        todo: [...state.todo, action.payload],
       };
-
+    case DELETE_TODO:
+      return {
+        ...state,
+        todo: state.todo.filter((item, index) => index !== action.payload),
+      };
     default:
       return state;
   }

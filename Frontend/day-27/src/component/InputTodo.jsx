@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import addTodo from "../redux/add/AddAction";
 
 function InputTodo() {
   const [item, setItem] = useState("");
-  const todo = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const addTodoHandler = (e) => {
