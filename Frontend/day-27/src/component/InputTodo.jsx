@@ -7,6 +7,7 @@ function InputTodo() {
   const dispatch = useDispatch();
 
   const addTodoHandler = (e) => {
+    e.preventDefault();
     if (item) {
       dispatch(addTodo(item));
     }
@@ -15,16 +16,18 @@ function InputTodo() {
 
   return (
     <div>
-      <div>
-        <input
-          type="text"
-          value={item}
-          onChange={(e) => setItem(e.target.value)}
-        />
-      </div>
-      <button style={{ cursor: "pointer" }} onClick={addTodoHandler}>
-        Add{" "}
-      </button>
+      <form>
+        <div>
+          <input
+            type="text"
+            value={item}
+            onChange={(e) => setItem(e.target.value)}
+          />
+        </div>
+        <button style={{ cursor: "pointer" }} onClick={addTodoHandler}>
+          Add{" "}
+        </button>
+      </form>
     </div>
   );
 }
