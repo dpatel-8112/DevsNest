@@ -4,8 +4,7 @@ import ListTodo from "./ListTodo";
 
 function Home() {
   return (
-    <div>
-      <h2>Home</h2>
+    <div style={{ marginTop: "100px" }}>
       <InputTodo />
       <ListTodo />
 
