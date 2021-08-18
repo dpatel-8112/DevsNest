@@ -14,7 +14,7 @@ function Home() {
   useEffect(() => {
     axios
       .get(
-        "http://rest-sandbox.coinapi.io/v1/assets?apikey=712B1681-2520-4461-A856-6F67CED4F57C"
+        "https://rest-sandbox.coinapi.io/v1/assets?apikey=712B1681-2520-4461-A856-6F67CED4F57C"
       )
       .then((res) => {
         setAssets(res);
@@ -25,7 +25,7 @@ function Home() {
   useEffect(() => {
     axios
       .get(
-        `http://rest-sandbox.coinapi.io/v1/exchangerate/${option1}/${option2}?apikey=712B1681-2520-4461-A856-6F67CED4F57C`
+        `https://rest-sandbox.coinapi.io/v1/exchangerate/${option1}/${option2}?apikey=712B1681-2520-4461-A856-6F67CED4F57C`
       )
       .then((res) => {
         console.log(res);
