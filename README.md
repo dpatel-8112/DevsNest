@@ -1,2 +1,2 @@
 # DevsNest
-www.amazingdotdp.me/devsnest/
+www.amazingdotdp.me/DevsNest/
