@@ -1,0 +1,355 @@
+.Main_Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 25px;
+  padding: 20px 0px 0px;
+
+  @media (max-width: 600px) {
+    margin: 0 1px;
+  }
+
+  .Left_Container {
+    display: flex;
+    justify-content: flex-end;
+    flex: 60%;
+    margin-right: 30px;
+
+    @media (max-width: 950px) {
+      margin-right: 0px;
+      flex: 1 100%;
+      justify-content: center;
+    }
+
+    .Posts_Container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      justify-content: center;
+
+      ::-webkit-scrollbar {
+        width: 0px;
+        height: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.979);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #000000;
+      }
+
+      @media (max-width: 600px) {
+        flex: 1 100%;
+      }
+      @media (max-width: 600px) {
+        padding: 0 1px;
+      }
+
+      .Post_Container {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 20px 0px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 600px) {
+          flex: 1 100%;
+        }
+
+        .Post_Header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px;
+
+          .User_Post {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .User_Image {
+              display: flex;
+              align-items: center;
+
+              img {
+                width: 40px;
+                border-radius: 50%;
+              }
+            }
+
+            .User_Name {
+              display: flex;
+              font-size: large;
+              padding: 0px 0px 0px 10px;
+              font-size: small;
+              font-weight: bold;
+              font-family: sans-serif;
+            }
+
+            .Post_Menu {
+              display: flex;
+            }
+          }
+        }
+
+        .Post_Image {
+          max-width: 600px;
+          img {
+            width: 100%;
+          }
+        }
+
+        .Post_Footer {
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+
+          .Post_Actions {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 0px 4px 0px;
+
+            .Post_LCS {
+              display: flex;
+
+              .Post_Like,
+              .Post_Comment,
+              .Post_Share {
+                cursor: pointer;
+                padding: 0px 6px 0px 0px;
+              }
+            }
+
+            .Post_Saved {
+              cursor: pointer;
+              padding: 0px 0px 0px 4px;
+            }
+          }
+
+          .Liked_By {
+            display: flex;
+            font-size: medium;
+          }
+
+          .Post_Comments {
+            display: flex;
+            flex-direction: column;
+            line-height: 100%;
+            padding: 8px 0px;
+
+            .Post_Comment {
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              padding: 2px 0px;
+
+              .Comment_By {
+                display: flex;
+                font-weight: bold;
+                font-family: sans-serif;
+                padding-right: 4px;
+              }
+
+              .Comment {
+                display: flex;
+                letter-spacing: normal;
+                font-size: medium;
+                line-height: 100%;
+              }
+            }
+          }
+
+          .Post_Time {
+            display: flex;
+            font-size: x-small;
+            font-weight: 500;
+            color: rgb(99, 99, 99);
+          }
+
+          hr {
+            color: rgba(0, 0, 0, 0.384);
+            margin: 15px 0px;
+          }
+
+          .Add_Comment {
+            display: flex;
+            flex-direction: row;
+
+            .Icon {
+              display: flex;
+              justify-content: center;
+              position: relative;
+              flex: 10%;
+
+              .Icon_Button {
+                cursor: pointer;
+              }
+              .Emoji_Picker {
+                display: flex;
+                position: absolute;
+                bottom: 35px;
+                left: 10px;
+
+                section {
+                  max-width: 250px;
+
+                  .emoji-mart-bar {
+                    display: none;
+                  }
+                }
+              }
+            }
+
+            .Input_Comment {
+              display: flex;
+              padding: 0px 5px;
+              flex: 70%;
+              width: 100%;
+
+              input {
+                display: flex;
+                outline: none;
+                border: none;
+                padding: 2px 6px;
+                font-size: medium;
+                width: 100%;
+              }
+            }
+
+            .Post_The_Comment {
+              display: flex;
+              justify-content: center;
+              flex: 20%;
+
+              button {
+                outline: none;
+                border: 2px solid blueviolet;
+                color: blueviolet;
+                font-weight: 500;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .Stories_Container {
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+        padding: 10px 0px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        width: 99vw;
+
+        @media (max-width: 600px) {
+          // flex: 1 100%;
+        }
+        .stories_Wrapper {
+          display: flex;
+          flex-direction: row;
+          overflow-y: scroll;
+
+          .Story_Container {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 10px;
+            cursor: pointer;
+
+            .Image_Wrapper2 {
+              display: flex;
+              border-radius: 50%;
+              border: 3px solid rgb(236, 7, 83);
+              padding: 1px;
+
+              img {
+                width: 60px;
+                border-radius: 50%;
+              }
+            }
+
+            .Story_User {
+              display: flex;
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Right_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 40%;
+    padding: 4px;
+    margin-top: 10px;
+
+    @media (max-width: 950px) {
+      display: none;
+    }
+
+    .Profile_Wrapper {
+      display: flex;
+      padding: 4px 4px;
+      margin: 6px 0px 0px 0px;
+      // background-color: yellow;
+      // width: 40vw;
+
+      .User_Image {
+        display: flex;
+        // flex: 20%;
+
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+      }
+
+      .User_Info {
+        // flex: 30%;
+        display: flex;
+        flex-direction: column;
+        font-size: medium;
+        font-family: sans-serif;
+        justify-content: center;
+        margin-left: 15px;
+
+        .User_Username {
+          display: flex;
+          font-weight: bold;
+        }
+        .User_Name {
+          display: flex;
+          color: gray;
+        }
+      }
+
+      .Action {
+        // flex: 50%;
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+
+        button {
+          outline: none;
+          border: none;
+          background-color: transparent;
+          color: rgb(10, 114, 212);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
